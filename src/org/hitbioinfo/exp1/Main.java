@@ -1,11 +1,15 @@
 package org.hitbioinfo.exp1;
 
 
+
 //commit on branch B1
 //commit on branch C4
 
 
 //b2
+
+
+// commit by fake_fan
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -42,6 +46,7 @@ public class Main {
             }
 
             // Read in the text.
+<<<<<<< HEAD
             Scanner in;
             try {
                 in = new Scanner(inputFile, "UTF-8");
@@ -51,6 +56,23 @@ public class Main {
             StringBuilder builder = new StringBuilder();
             while (in.hasNextLine()) {
                 builder.append(in.nextLine());
+=======
+            // AND HANDLE THE EXCEPTION.
+            Scanner in = null;
+            StringBuilder builder;
+            try {
+                in = new Scanner(inputFile, "UTF-8");
+                builder = new StringBuilder();
+                while (in.hasNextLine()) {
+                    builder.append(in.nextLine());
+                }
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException("Attention: The file is not found!");
+            } finally {
+                if (in != null) {
+                    in.close();
+                }
+>>>>>>> partner/master
             }
             String rawInput = builder.toString();
 

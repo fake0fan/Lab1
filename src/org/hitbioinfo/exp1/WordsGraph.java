@@ -1,12 +1,16 @@
 package org.hitbioinfo.exp1;
 
 
+
 //commit on branch B1
 
 //commit on branch C4
 
 
 //b2
+
+
+//commit by fake_fan
 
 import java.awt.*;
 import java.io.File;
@@ -176,6 +180,10 @@ public class WordsGraph {
 
             srcWord = tgtWord;
         }
+<<<<<<< HEAD
+=======
+        strScanner.close();
+>>>>>>> partner/master
     }
 
     /* ----------------- Primary Methods ----------------- */
